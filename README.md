@@ -1,4 +1,4 @@
-# Frontend Mentor - [Four card feature section](https://four-card-feature-b1xzrc6sb.now.sh/)
+# Frontend Mentor - [Four card feature section](https://four-card-feature-ten.now.sh/)
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
