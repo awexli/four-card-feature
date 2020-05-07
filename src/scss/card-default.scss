@@ -10,6 +10,8 @@
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
+  transition: transform ease 0.2s;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -20,21 +22,28 @@
     width: 100%;
   }
 
+  &:hover {
+    transform: translateY(-5px);
+  }
+
   &.card-left {
     &::before {
       background: hsl(180, 62%, 55%);
     }
   }
+
   &.card-middle-top {
     &::before {
       background: hsl(0, 78%, 62%);
     }
   }
+
   &.card-middle-bot {
     &::before {
       background: hsl(34, 97%, 64%);
     }
   }
+
   &.card-right {
     &::before {
       background: hsl(212, 86%, 64%);

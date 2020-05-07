@@ -86,6 +86,8 @@ html {
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
+  transition: transform ease 0.2s;
+  cursor: pointer;
 }
 .card-default::before {
   content: "";
@@ -94,6 +96,9 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+}
+.card-default:hover {
+  transform: translateY(-5px);
 }
 .card-default.card-left::before {
   background: #45d3d3;
