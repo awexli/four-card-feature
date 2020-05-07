@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 310px;
-  height: 220px;
+  height: 235px;
   border-radius: 6px;
   border: solid 1px hsl(0, 0%, 98%);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -68,7 +68,7 @@
 }
 
 .card-sub {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 12px;
   padding-top: 8px;
   color: hsl(229, 6%, 66%);
@@ -80,12 +80,20 @@
 
 .card-image-block {
   margin-top: 40px;
+  height: 50px;
   text-align: right;
-  overflow: hidden;
+  position: relative;
 
-  .card-image {
-    height: 100%;
+  @media only screen and (min-width: 768px) {
+    height: 64px;
   }
+}
+
+.card-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
 }
 
 .card-middle-block {

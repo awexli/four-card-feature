@@ -9,7 +9,7 @@
 .header-main {
   display: flex;
   flex-direction: column;
-  max-width: 310px;
+  max-width: 320px;
   font-size: 1.6rem;
   line-height: 2.5rem;
   color: hsl(234, 12%, 34%);
@@ -22,7 +22,7 @@
   @media only screen and (min-width: 1200px) {
     max-width: 510px;
     font-size: 2.4rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 }
 
