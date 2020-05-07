@@ -9,15 +9,20 @@
 .header-main {
   display: flex;
   flex-direction: column;
-  max-width: 295px;
+  max-width: 310px;
   font-size: 1.6rem;
   line-height: 2.5rem;
   color: hsl(234, 12%, 34%);
 
+  @media only screen and (min-width: 768px) {
+    max-width: unset;
+    font-size: 2rem;
+  }
+
   @media only screen and (min-width: 1200px) {
-    max-width: 440px;
+    max-width: 510px;
     font-size: 2.4rem;
-    line-height: 3.5rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -35,6 +40,10 @@
   color: hsl(229, 6%, 66%);
 
   @media only screen and (min-width: 768px) {
-    max-width: 500px;
+    max-width: 450px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 510px;
   }
 }

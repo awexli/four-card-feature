@@ -21,13 +21,13 @@ const app = new Vue({
       },
       middleBot: {
         title: 'Karma',
-        sub: 'Karma Regularly evaluates our talent to ensure quality',
+        sub: 'Regularly evaluates our talent to ensure quality',
         icon: './images/icon-karma.svg',
       },
       right: {
         title: 'Calculator',
         sub:
-          'Calculator Uses data from past projects to provide better delivery estimates',
+          'Uses data from past projects to provide better delivery estimates',
         icon: './images/icon-calculator.svg',
       },
     },
