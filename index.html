@@ -15,7 +15,7 @@
   <body>
     <div id="app">
       <header>
-        <div class="heading-wrapper">
+        <div class="heading-block">
           <div class="header-main">
             <span class="header-main-top">{{ header.top }}</span>
             <span class="header-main-bot">{{ header.bot }}</span>
@@ -23,13 +23,43 @@
           <p class="header-sub">{{ header.sub }}</p>
         </div>
       </header>
-      <div class="content-wrapper">
-        <div class="card-left"></div>
-        <div class="card-middle-wrapper">
-          <div class="card-middle-top"></div>
-          <div class="card-middle-bot"></div>
+      <div class="content-block">
+        <!-- 310x220 mobile -->
+        <!-- 350x250 desktop -->
+        <div class="card-left card-default">
+          <p class="card-title">{{ card.left.title }}</p>
+          <p class="card-sub">{{ card.left.sub }}</p>
+          <div class="card-image-block">
+            <img
+              class="card-image"
+              :src="card.left.icon"
+              alt="Supervisor Icon"
+            />
+          </div>
         </div>
-        <div class="card-right"></div>
+        <div class="card-middle-block">
+          <div class="card-middle-top">
+            <h2 class="card-title"></h2>
+            <p class="card-sub"></p>
+            <div class="card-image-block">
+              <img class="card-image" src="" alt="" />
+            </div>
+          </div>
+          <div class="card-middle-bot">
+            <h2 class="card-title"></h2>
+            <p class="card-sub"></p>
+            <div class="card-image-block">
+              <img class="card-image" src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="card-right">
+          <h2 class="card-title"></h2>
+          <p class="card-sub"></p>
+          <div class="card-image-block">
+            <img class="card-image" src="" alt="" />
+          </div>
+        </div>
       </div>
     </div>
     <!-- Supervisor Monitors activity to identify
