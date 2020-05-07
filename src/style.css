@@ -62,41 +62,55 @@ html {
   flex-direction: column;
   max-width: 310px;
   height: 220px;
-  padding: 30px;
   border-radius: 6px;
   border: solid 1px #fafafa;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 25px;
   position: relative;
   overflow: hidden;
 }
-.card-default::after {
+.card-default::before {
   content: "";
   position: absolute;
   height: 5px;
-  background: #45d3d3;
   top: 0;
   left: 0;
   width: 100%;
+}
+.card-default.card-left::before {
+  background: #45d3d3;
+}
+.card-default.card-middle-top::before {
+  background: #ea5353;
+}
+.card-default.card-middle-bot::before {
+  background: #fcaf4a;
+}
+.card-default.card-right::before {
+  background: #549ef2;
 }
 
 .card-title {
   font-size: large;
   font-weight: 600;
+  color: #4c4e61;
 }
 
 .card-sub {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   padding-top: 8px;
+  color: #a3a5ae;
 }
 
 .card-image-block {
   padding-top: 40px;
   text-align: right;
+  overflow: hidden;
 }
-
-.card-image {
-  transform: scale(0.8);
+.card-image-block .card-image {
+  height: 100%;
 }
 
 .attribution {

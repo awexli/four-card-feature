@@ -7,40 +7,64 @@
   flex-direction: column;
   max-width: 310px;
   height: 220px;
-  padding: 30px;
   border-radius: 6px;
   border: solid 1px hsl(0, 0%, 98%);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 25px;
   position: relative;
   overflow: hidden;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     height: 5px;
-    background: hsl(180, 62%, 55%);
     top: 0;
     left: 0;
     width: 100%;
+  }
+
+  &.card-left {
+    &::before {
+      background: hsl(180, 62%, 55%);
+    }
+  }
+  &.card-middle-top {
+    &::before {
+      background: hsl(0, 78%, 62%);
+    }
+  }
+  &.card-middle-bot {
+    &::before {
+      background: hsl(34, 97%, 64%);
+    }
+  }
+  &.card-right {
+    &::before {
+      background: hsl(212, 86%, 64%);
+    }
   }
 }
 
 .card-title {
   font-size: large;
   font-weight: 600;
+  color: hsl(234, 12%, 34%);
 }
 
 .card-sub {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   padding-top: 8px;
+  color: hsl(229, 6%, 66%);
 }
 
 .card-image-block {
   padding-top: 40px;
   text-align: right;
-}
+  overflow: hidden;
 
-.card-image {
-  transform: scale(0.8);
+  .card-image {
+    height: 100%;
+  }
 }

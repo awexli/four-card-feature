@@ -26,7 +26,7 @@
       <div class="content-block">
         <!-- 310x220 mobile -->
         <!-- 350x250 desktop -->
-        <div class="card-left card-default">
+        <div class="card-default card-left">
           <p class="card-title">{{ card.left.title }}</p>
           <p class="card-sub">{{ card.left.sub }}</p>
           <div class="card-image-block">
@@ -38,26 +38,38 @@
           </div>
         </div>
         <div class="card-middle-block">
-          <div class="card-middle-top">
-            <h2 class="card-title"></h2>
-            <p class="card-sub"></p>
+          <div class="card-default card-middle-top">
+            <h2 class="card-title">{{ card.middleTop.title }}</h2>
+            <p class="card-sub">{{ card.middleTop.sub }}</p>
             <div class="card-image-block">
-              <img class="card-image" src="" alt="" />
+              <img
+                class="card-image"
+                :src="card.middleTop.icon"
+                alt="Team Builder Icon"
+              />
             </div>
           </div>
-          <div class="card-middle-bot">
-            <h2 class="card-title"></h2>
-            <p class="card-sub"></p>
+          <div class="card-default card-middle-bot">
+            <h2 class="card-title">{{ card.middleBot.title }}</h2>
+            <p class="card-sub">{{ card.middleBot.sub }}</p>
             <div class="card-image-block">
-              <img class="card-image" src="" alt="" />
+              <img
+                class="card-image"
+                :src="card.middleBot.icon"
+                alt="Karma Icon"
+              />
             </div>
           </div>
         </div>
-        <div class="card-right">
-          <h2 class="card-title"></h2>
-          <p class="card-sub"></p>
+        <div class="card-default card-right">
+          <h2 class="card-title">{{ card.right.title }}</h2>
+          <p class="card-sub">{{ card.right.sub }}</p>
           <div class="card-image-block">
-            <img class="card-image" src="" alt="" />
+            <img
+              class="card-image"
+              :src="card.right.icon"
+              alt="Calculator Icon"
+            />
           </div>
         </div>
       </div>

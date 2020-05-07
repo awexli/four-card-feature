@@ -13,6 +13,23 @@ const app = new Vue({
         sub: 'Monitors activity to identify project roadblocks',
         icon: './images/icon-supervisor.svg',
       },
+      middleTop: {
+        title: 'Team Builder',
+        sub:
+          'Scans our talent network to create the optimal team for your project',
+        icon: './images/icon-team-builder.svg',
+      },
+      middleBot: {
+        title: 'Karma',
+        sub: 'Karma Regularly evaluates our talent to ensure quality',
+        icon: './images/icon-karma.svg',
+      },
+      right: {
+        title: 'Calculator',
+        sub:
+          'Calculator Uses data from past projects to provide better delivery estimates',
+        icon: './images/icon-calculator.svg',
+      },
     },
   },
 });
