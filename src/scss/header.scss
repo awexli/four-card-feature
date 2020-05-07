@@ -12,6 +12,7 @@
   max-width: 295px;
   font-size: 1.6rem;
   line-height: 2.5rem;
+  color: hsl(234, 12%, 34%);
 
   @media only screen and (min-width: 1200px) {
     max-width: 440px;
@@ -31,7 +32,9 @@
 .header-sub {
   max-width: 295px;
   margin-top: 24px;
-  @media only screen and (min-width: 1200px) {
+  color: hsl(229, 6%, 66%);
+
+  @media only screen and (min-width: 768px) {
     max-width: 500px;
   }
 }

@@ -11,10 +11,6 @@
   position: relative;
   overflow: hidden;
 
-  @media only screen and (min-width: 1200px) {
-    margin: 0 20px;
-  }
-
   &::before {
     content: '';
     position: absolute;
@@ -46,12 +42,6 @@
   }
 }
 
-.card-middle-block .card-default {
-  @media only screen and (min-width: 1200px) {
-    margin: 20px 0;
-  }
-}
-
 .card-title {
   font-size: large;
   font-weight: 600;
@@ -72,5 +62,38 @@
 
   .card-image {
     height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card-middle-block {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-middle-top {
+    margin-right: 10px;
+  }
+
+  .card-middle-bot {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-middle-top {
+    margin-right: 0;
+  }
+
+  .card-middle-bot {
+    margin-left: 0;
+  }
+
+  .card-default {
+    margin: 10px;
+  }
+
+  .card-middle-block {
+    flex-direction: column;
   }
 }
